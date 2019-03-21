@@ -54,12 +54,11 @@ $(document).ready(function()
         if (!CheckFirstname(firstname)) {
             return;
         }
-        if (lastname.length > 30 || lastname.length < 3) {
-            alert("The lenght of the Last Name is not correct!");
+        if (!CheckLastname(lastname)) {
             return;
         }
-        if (phone.length > 13 || phone.length < 9) {
-            alert("The lenght of the Phone is not correct!");
+        if (!CheckPhone(phone)) {
+            alert("The Phone is incorrect!");
             return;
         }
         if (description.length > 200) {
@@ -77,17 +76,35 @@ function CheckFirstname(firstname) {
         alert("The lenght of the First Name is too short!");
         return false;
     }
-    var a = new String("");
-    a = firstname;
     var pattern = /[0-9]/;
     var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
-    if (pattern.test(a) || a.match(format)) {
+    if (pattern.test(firstname) || firstname.match(format)) {
         alert("The First Name field is incorrect format");
         return false;
     }
     return true;
 }
-function CheckFirstname(firstname) {
-
+function CheckLastname(lastname) {
+    if (lastname.length > 30) {
+        alert("The lenght of the Last Name is too long!");
+        return false;
+    }
+    if (lastname.length < 3) {
+        alert("The lenght of the Last Name is too short!");
+        return false;
+    }
+    var pattern = /[0-9]/;
+    var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+    if (pattern.test(lastname) || lastname.match(format)) {
+        alert("The Last Name field is incorrect format");
+        return false;
+    }
+    return true;
+}
+function CheckPhone(phone) {
+    var pattern = /^[0-9]{9,13}$/;
+    if (pattern.test(phone))
+        return true;
+    return false;
 }
 
