@@ -43,17 +43,51 @@
 /*------------------------------------------------------------------------------------------------*/
 
 
-$("submit").click(function () {
-    var firstname = document.getElementById('FirstName').value;
-    alert(firstname);
-});
 $(document).ready(function()
 {
-    $("#test").click(function(){
+    $("#test").click(function (event) {
+        
         var firstname = document.getElementById('FirstName').value;
-        alert(firstname);
+        var lastname = document.getElementById('LastName').value;
+        var phone = document.getElementById('Phone').value;
+        var description = document.getElementById('Description').value;
+        if (!CheckFirstname(firstname)) {
+            return;
+        }
+        if (lastname.length > 30 || lastname.length < 3) {
+            alert("The lenght of the Last Name is not correct!");
+            return;
+        }
+        if (phone.length > 13 || phone.length < 9) {
+            alert("The lenght of the Phone is not correct!");
+            return;
+        }
+        if (description.length > 200) {
+            alert("The lenght of the Description is to long!");
+            return;
+        }
     });
 });
+function CheckFirstname(firstname) {
+    if (firstname.length > 30) {
+        alert("The lenght of the First Name is too long!");
+        return false;
+    }
+    if (firstname.length < 3) {
+        alert("The lenght of the First Name is too short!");
+        return false;
+    }
+    var a = new String("");
+    a = firstname;
+    var pattern = /[0-9]/;
+    var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+    if (pattern.test(a) || a.match(format)) {
+        alert("The First Name field is incorrect format");
+        return false;
+    }
+    return true;
+}
+function CheckFirstname(firstname) {
 
-
+}
 
