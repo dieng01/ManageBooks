@@ -1,3 +1,5 @@
+//import { fail } from "assert";
+
 //$(function() {
 //    $('#side-menu').metisMenu();
 //});
@@ -45,7 +47,7 @@
 
 $(document).ready(function()
 {
-    $("#test").click(function (event) {
+    $("#btnSubmit").click(function (event) {
         
         var firstname = document.getElementById('FirstName').value;
         var lastname = document.getElementById('LastName').value;
@@ -61,8 +63,7 @@ $(document).ready(function()
             alert("The Phone is incorrect!");
             return;
         }
-        if (description.length > 200) {
-            alert("The lenght of the Description is to long!");
+        if (CheckDescription(description)) {
             return;
         }
     });
@@ -106,5 +107,17 @@ function CheckPhone(phone) {
     if (pattern.test(phone))
         return true;
     return false;
+}
+function CheckDescription(description) {
+    var format = /[!#$%^&{}'"?]/;
+    if (description.length > 200) {
+        alert("The Description field is too long");
+        return false;
+    }
+    if (description.match(format)) {
+        alert("The Description field must be not include the Symbol character");
+        return false;
+    }
+    return true;
 }
 
