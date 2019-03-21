@@ -126,6 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EditProfileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\ViewControllerController.cs" />
@@ -146,7 +147,7 @@
     <Content Include="Content\Assets\dist\js\sb-admin-2.min.js" />
     <Content Include="Content\Assets\gulpfile.js" />
     <Content Include="Content\Assets\index.html" />
-    <Content Include="Content\Assets\js\sb-admin-2.js" />
+    <Content Include="Content\Assets\js\MyValidation.js" />
     <Content Include="Content\Assets\pages\blank.html" />
     <Content Include="Content\Assets\pages\buttons.html" />
     <Content Include="Content\Assets\pages\flot.html" />
@@ -351,8 +352,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Profile\Edit.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
+    <Content Include="Views\EditProfile\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
