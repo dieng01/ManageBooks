@@ -22,7 +22,7 @@
                             <div class="col-lg-6">
                                 <form role="form">
                                     <div class="form-group">
-                                        <label id="meme">First Name</label>
+                                        <label>First Name</label>
                                         <input id="FirstName" onchange="test" class="form-control" placeholder="Enter the first name">
                                     </div>
                                     <div class="form-group">
@@ -41,8 +41,8 @@
                                         <label>Description</label>
                                         <textarea id="Description" class="form-control" rows="3"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-submit">Submit Button</button>
-                                    <button type="reset" id="test" click="CheckValidation" class="btn btn-submit">Reset Button</button>
+                                    <button type="submit" id="test" click="CheckValidation" class="btn btn-submit">Submit Button</button>
+                                    <button type="reset" class="btn btn-submit">Reset Button</button>
                                 </form>
                             </div>
                         </div>
@@ -59,18 +59,18 @@
     <!-- /#page-wrapper -->
 
 </div>
-<script>
-    $(document).ready(function () {
-        document.write("heelo world");
-        $("#meme").click(function () {
-            var firstname = document.getElementById('FirstName').value;
-            alert(firstname);
-        });
-    });
-    function CheckValidation() {
-        var firstname = document.getElementById('FirstName').value;
-        alert(firstname);
-    };
+<script type="text/javascript" language="javascript">
+    //$(document).ready(function () {
+    //    document.write("heelo world");
+    //    $("#Test").click(function () {
+    //        var firstname = document.getElementById('FirstName').value;
+    //        alert(firstname);
+    //    });
+    //});
+    //function CheckValidation() {
+    //    var firstname = document.getElementById('FirstName').value;
+    //    alert(firstname);
+    //};
 </script>
 @Scripts.Render("~/Content/Assets/js/MyValidation.js")
 
