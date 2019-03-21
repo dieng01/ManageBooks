@@ -351,6 +351,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Profile\Edit.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
