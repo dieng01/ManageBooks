@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace ManageBooks.Controllers
 {
-    public class ViewControllerController : Controller
+    public class ViewContentController : Controller
     {
-        // GET: ViewController
+        // GET: ViewContent
         public ActionResult Index()
         {
             return View();
