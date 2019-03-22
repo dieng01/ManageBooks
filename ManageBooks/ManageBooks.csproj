@@ -147,6 +147,7 @@
     <Content Include="Content\Assets\dist\js\sb-admin-2.min.js" />
     <Content Include="Content\Assets\gulpfile.js" />
     <Content Include="Content\Assets\index.html" />
+    <Content Include="Content\Assets\js\AddContent.js" />
     <Content Include="Content\Assets\js\Login.js" />
     <Content Include="Content\Assets\js\MyValidation.js" />
     <Content Include="Content\Assets\js\Register.js" />
@@ -355,16 +356,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Register\Index.cshtml" />
-    <Content Include="Views\AddContent\AddContent.cshtml" />
-    <Content Include="Views\EditProfile\Index.cshtml" />
     <Content Include="Views\ViewContent\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Register\Index.cshtml" />
-    <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\AddContent\AddContent.cshtml" />
     <Content Include="Views\EditProfile\Index.cshtml" />
     <Content Include="Views\ViewContent\Index.cshtml" />
+    <Content Include="Views\Register\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

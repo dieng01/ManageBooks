@@ -1,48 +1,42 @@
-﻿$(document).ready(function () {
-    $("#register-form").validate({
+﻿
+$(document).ready(function () {
+    $("#AddContent").validate({
         onfocusout: false,
         onkeyup: false,
         onclick: false,
         rules: {
-            "username": {
+            "title": {
                 required: true,
-                maxlength: 50,
-                minlength: 3
+                maxlength: 200,
+                minlength: 10
             },
-            "email": {
+            "brief": {
                 required: true,
-                maxlength: 30,
-                minlength: 5
+                maxlength: 150,
+                minlength: 30
             },
-            "password": {
+            "content": {
                 required: true,
-                minlength: 8,
-                maxlenght: 50
-            },
-            "repassword": {
-                required: true,
+                minlength: 50,
+                maxlenght: 1000
             },
         },
         messages: {
-            "username": {
-                required: "User Name is required",
-                maxlength: "The User Name field is too long",
+            "title": {
+                required: "title is required",
+                maxlength: "The title field is too long",
                 minlength: ""
             },
-            "email": {
-                required: "Email is required",
-                maxlength: "The Email field is too long",
+            "brief": {
+                required: "brief is required",
+                maxlength: "The brief field is too long",
                 minlength: ""
             },
-            "password": {
-                required: "Passwword is required",
-                minlength: "Password field is too short",
-                maxlenght: "Password field is too long"
+            "content": {
+                required: "content is required",
+                minlength: "content field is too short",
+                maxlenght: "content field is too long"
             },
-            "repassword": {
-                required: "Passwword is required",
-            },
-
         }
     });
 });
