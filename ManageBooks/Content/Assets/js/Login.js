@@ -71,12 +71,12 @@ $(document).ready(function () {
         },
         messages: {
             "email": {
-                required: "Email is mamdatory",
+                required: "Email is required",
                 maxlength: "The Email field is too long",
                 minlength:""
             },
             "password": {
-                required: "Passwword is mamdatory",
+                required: "Passwword is required",
                 minlength: "Password field is too short",
                 maxlenght: "Password field is too long"
             },
