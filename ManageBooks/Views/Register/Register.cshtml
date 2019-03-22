@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Register";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
 
 <body>
@@ -15,20 +15,21 @@
                     </div>
                     <div class="panel-body">
                         <form role="form">
+                            <p class="errorName"></p>
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="User Names" name="UserNames" autofocus>
+                                    <input class="form-control" id="username" placeholder="User Names" name="username" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" id="email" placeholder="E-mail" name="email" type="email" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <input class="form-control" id="password" placeholder="Password" name="password" type="password" value="">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="RE Password" name="repassword" type="password" value="">
+                                    <input class="form-control" id="repassword" placeholder="RE Password" name="repassword" type="password" value="">
                                 </div>
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Register</a>
+                                <a href="#" class="btn btn-lg btn-success btn-block" id="btnRegister">Register</a>
                             </fieldset>
                         </form>
                     </div>
