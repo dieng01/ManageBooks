@@ -9,7 +9,7 @@ namespace ManageBooks.Controllers
     public class RegisterController : Controller
     {
         // GET: Register
-        public ActionResult Index()
+        public ActionResult Register()
         {
             return View();
         }
