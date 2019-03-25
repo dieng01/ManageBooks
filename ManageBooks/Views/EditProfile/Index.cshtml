@@ -20,14 +20,18 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <form role="form">
+                                <div class="" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                </div>
+                                <form role="form" id="form-profile">
                                     <div class="form-group">
                                         <label>First Name</label>
-                                        <input id="FirstName" onchange="test" class="form-control" placeholder="Enter the first name">
+                                        <input id="FirstName" class="form-control" placeholder="Enter the first name">
+                                        <span id="error_firstname" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label>Last Name</label>
                                         <input id="LastName" class="form-control" placeholder="Enter the last name">
+                                        <span id="error_lastname" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label>Email</label>
@@ -36,13 +40,15 @@
                                     <div class="form-group">
                                         <label>Phone</label>
                                         <input id="Phone" class="form-control" placeholder="Enter your phone number">
+                                        <span id="error_phone" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label>Description</label>
                                         <textarea id="Description" class="form-control" rows="3"></textarea>
+                                        <span id="error_description" class="text-danger"></span>
                                     </div>
-                                    <button type="submit" id="btnSubmit" class="btn btn-submit">Submit Button</button>
-                                    <button type="reset" class="btn btn-submit">Reset Button</button>
+                                    <a id="btnSubmit" class="btn btn-submit btn_Sub" >Submit Button</a>
+                                    <button type="reset" class="btn btn-submit" >Reset Button</button>
                                 </form>
                             </div>
                         </div>
